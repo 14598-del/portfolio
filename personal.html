@@ -1,140 +1,267 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | ณัฐณิชา แก้วไทรวาด</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Information</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt',sans-serif;
+}
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+body{
+    background:linear-gradient(135deg,#ff8c42,#ffb347);
+    min-height:100vh;
+    color:white;
+}
+
+nav{
+    width:100%;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(12px);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#fff3b0;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:50px auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h1{
+    font-size:48px;
+}
+
+.title p{
+    opacity:.9;
+}
+
+.profile{
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+    justify-content:center;
+    align-items:center;
+}
+
+.profile img{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:20px;
+    border:5px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.info-card{
+    flex:1;
+    min-width:320px;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:30px;
+}
+
+.info-item{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.info-item:last-child{
+    border:none;
+}
+
+.info-title{
+    font-weight:600;
+}
+
+.skill-box{
+    margin-top:35px;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(10px);
+    padding:25px;
+    border-radius:20px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:15px;
+}
+
+.skill{
+    background:white;
+    color:#ff7b00;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.footer{
+    text-align:center;
+    margin:40px 0 20px;
+    opacity:.8;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.title h1{
+    font-size:36px;
+}
+
+.profile{
+    flex-direction:column;
+}
+
+}
+</style>
+
 </head>
-
 <body>
 
-    <!-- Navigation -->
+<nav>
 
-    <nav>
+<div class="logo">🎓 Portfolio</div>
 
-        <div class="logo">
-            Portfolio
-        </div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="information.html"><b>Information</b></a></li>
+<li><a href="education.html">Education</a></li>
+<li><a href="activity.html">Activity</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 
-        <ul>
+</nav>
 
-            <li><a href="index.html">หน้าหลัก</a></li>
-            <li><a href="education.html">การศึกษา</a></li>
-            <li><a href="personal.html">ประวัติส่วนตัว</a></li>
-            <li><a href="activities.html">ผลงาน</a></li>
-            <li><a href="contact.html">ติดต่อ</a></li>
+<div class="container">
 
-        </ul>
+<div class="title">
+<h1>👤 Information</h1>
+<p>ข้อมูลส่วนตัวของฉัน</p>
+</div>
 
-    </nav>
+<div class="profile">
 
-    <!-- Hero -->
+<img src="images/profile.jpg" alt="Profile">
 
-    <section class="hero">
+<div class="info-card">
 
-        <div class="hero-text">
+<div class="info-item">
+<span class="info-title">ชื่อ</span>
+<span>นางสาวณัฐณิชา แก้วไทรวาด</span>
 
-            <h1>สวัสดีค่ะ </h1>
+</div>
 
-            <h2>ดิฉัน นางสาว ณัฐณิชา แก้วไทรวาด</h2>
+<div class="info-item">
+<span class="info-title">ชื่อเล่น</span>
+<span>ใบบัว</span>
+</div>
 
-            <p>
-                นักเรียนชั้นมัธยมศึกษาปีที่ 6
-                ยินดีต้อนรับสู่เว็บไซด์ portfolio ของฉัน
-                เว็บไซด์นี้จะนำเสนอเกี่ยวกับตัวฉัน ทั้งประวัติส่วนตัว
-                กิจกรรม ผลงาน ทักษะความสามารถ และสิ่งที่ฉันสนใจ
-            </p>
+<div class="info-item">
+<span class="info-title">วันเกิด</span>
+<span>14 เดือนมีนาคม 2551</span>
+</div>
 
-            <a href="activities.html" class="btn">
-                ดูผลงาน
-            
-            </a>
+<div class="info-item">
+<span class="info-title">อายุ</span>
+<span>18 ปี</span>
+</div>
 
-        </div>
+<div class="info-item">
+<span class="info-title">โรงเรียน</span>
+<span>โรงเรียนพานทองต้นสน</span>
+</div>
 
-        <div class="hero-image">
+<div class="info-item">
+<span class="info-title">แผนการเรียน</span>
+<span>สายศิลป์ภาษา จีน - อังกฤษ</span>
+</div>
 
-            <img src="images/profile.jpg" alt="Profile">
+<div class="info-item">
+<span class="info-title">งานอดิเรก</span>
+<span>ฟังเพลง • เล่นเกม • ถ่ายภาพ</span>
+</div>
 
-        </div>
+</div>
 
-    </section>
+</div>
 
-    <!-- Skills -->
+<div class="skill-box">
 
-    <section class="skills">
+<h2>💻 Skills</h2>
 
-        <h2>ความสามารถ</h2>
+<div class="skills">
 
-        <div class="cards">
+<div class="skill">HTML</div>
 
-            <div class="card">
-                <i class="fa-solid fa-code"></i>
-                <h3>Programming</h3>
-                <p>HTML CSS JavaScript Python</p>
-            </div>
+<div class="skill">CSS</div>
 
-            <div class="card">
-                <i class="fa-solid fa-palette"></i>
-                <h3>Design</h3>
-                <p>Canva Figma Photoshop</p>
-            </div>
+<div class="skill">JavaScript</div>
 
-            <div class="card">
-                <i class="fa-solid fa-users"></i>
-                <h3>Teamwork</h3>
-                <p>ทำงานร่วมกับผู้อื่นได้ดี</p>
-            </div>
+<div class="skill">Canva</div>
 
-        </div>
+<div class="skill">Microsoft Office</div>
 
-    </section>
+<div class="skill">Photoshop</div>
 
-    <!-- Goal -->
+</div>
 
-    <section class="goal">
+</div>
 
-        <h2>เป้าหมาย</h2>
+<div class="footer">
+© 2026 My Portfolio
+</div>
 
-        <p>
-
-            ต้องการศึกษาต่อในระดับอุดมศึกษา
-            มหาวิทยาลัยธรรมศาสตร์ คณะนิติศาสตร์
-            สาขานิติศาสตร์ เพื่อพัฒนาความรู้และทักษะ
-            ที่สนใจและจำเป็นต่อการประกอบอาชีพในอนาคต
-            สร้างอนาคตที่มั่นคงให้ตัวเอง
-            
-        
-
-        </p>
-
-    </section>
-
-    <!-- Footer -->
-
-    <footer>
-
-        <p>
-
-            © 2026 Portfolio |
-            จัดทำโดย นางสาวณัฐณิชา แก้วไทรวาด
-
-        </p>
-
-    </footer>
-
-    <script src="js/script.js"></script>
+</div>
 
 </body>
-
 </html>
