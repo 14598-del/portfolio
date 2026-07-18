@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Prompt',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#FFF7ED,#FFD8A8,#FFB86B);
+min-height:100vh;
+}
+
+nav{
+width:100%;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.35);
+backdrop-filter:blur(15px);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#ff6b00;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:#444;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff6b00;
+}
+
+.container{
+width:90%;
+max-width:1000px;
+margin:60px auto;
+}
+
+.title{
+text-align:center;
+margin-bottom:45px;
+}
+
+.title h1{
+font-size:48px;
+color:#ff6b00;
+}
+
+.title p{
+color:#666;
+margin-top:10px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.45);
+backdrop-filter:blur(12px);
+border-radius:20px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.icon{
+width:80px;
+height:80px;
+background:#ff7b00;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+margin:0 auto 20px;
+}
+
+.card h2{
+margin-bottom:10px;
+color:#333;
+}
+
+.card p{
+color:#666;
+word-break:break-word;
+}
+
+.card a{
+color:#ff6b00;
+text-decoration:none;
+font-weight:600;
+}
+
+.footer{
+text-align:center;
+padding:35px;
+color:#666;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+padding:20px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+margin-top:15px;
+}
+
+.title h1{
+font-size:38px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<div class="logo">🍊 Portfolio</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="information.html">Information</a></li>
+<li><a href="education.html">Education</a></li>
+<li><a href="activity.html">Activity</a></li>
+<li><a href="contact.html"><b>Contact</b></a></li>
+</ul>
+
+</nav>
+
+<div class="container">
+
+<div class="title">
+<h1>📬 Contact Me</h1>
+<p>สามารถติดต่อฉันผ่านช่องทางด้านล่าง</p>
+</div>
+
+<div class="contact-grid">
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-envelope"></i>
+</div>
+
+<h2>Email</h2>
+
+<p>
+yourname@gmail.com
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-phone"></i>
+</div>
+
+<h2>Phone</h2>
+
+<p>
+0XX-XXX-XXXX
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-brands fa-github"></i>
+</div>
+
+<h2>GitHub</h2>
+
+<p>
+<a href="https://github.com/USERNAME" target="_blank">
+github.com/USERNAME
+</a>
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-brands fa-facebook-f"></i>
+</div>
+
+<h2>Facebook</h2>
+
+<p>
+<a href="https://facebook.com/USERNAME" target="_blank">
+Facebook Profile
+</a>
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-brands fa-instagram"></i>
+</div>
+
+<h2>Instagram</h2>
+
+<p>
+<a href="https://instagram.com/USERNAME" target="_blank">
+@USERNAME
+</a>
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+
+<h2>Address</h2>
+
+<p>
+ชลบุรี, ประเทศไทย
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+🍊 Thank you for visiting my Portfolio 🍊
+</div>
+
+</body>
+</html>
