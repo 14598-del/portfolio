@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#FFF7ED,#FFD8A8,#FFB86B);
+    min-height:100vh;
+}
+
+nav{
+    width:100%;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,.35);
+    backdrop-filter:blur(15px);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff6b00;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff6b00;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h1{
+    font-size:48px;
+    color:#ff6b00;
+}
+
+.title p{
+    color:#555;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.45);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.content{
+    padding:20px;
+}
+
+.date{
+    display:inline-block;
+    background:#ff7b00;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+.content h2{
+    color:#333;
+    margin-bottom:10px;
+}
+
+.content p{
+    color:#666;
+    line-height:1.7;
+}
+
+.footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+.title h1{
+    font-size:38px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<div class="logo">🍊 Portfolio</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="information.html">Information</a></li>
+<li><a href="education.html">Education</a></li>
+<li><a href="activity.html"><b>Activity</b></a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="container">
+
+<div class="title">
+<h1>🏆 Activities</h1>
+<p>กิจกรรมและผลงานที่เคยเข้าร่วม</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<img src="images/activity1.jpg" alt="Activity 1">
+
+<div class="content">
+<div class="date">2026</div>
+<h2>กิจกรรมจิตอาสา</h2>
+<p>
+เข้าร่วมกิจกรรมบำเพ็ญประโยชน์ พัฒนาชุมชน และทำงานร่วมกับเพื่อน ๆ
+</p>
+</div>
+
+</div>
+
+<div class="card">
+<img src="images/activity2.jpg" alt="Activity 2">
+
+<div class="content">
+<div class="date">2025</div>
+<h2>การแข่งขันวิชาการ</h2>
+<p>
+เข้าร่วมการแข่งขันเพื่อพัฒนาทักษะการคิดวิเคราะห์และการทำงานเป็นทีม
+</p>
+</div>
+
+</div>
+
+<div class="card">
+<img src="images/activity3.jpg" alt="Activity 3">
+
+<div class="content">
+<div class="date">2025</div>
+<h2>ค่ายพัฒนาทักษะ</h2>
+<p>
+เรียนรู้การทำงานร่วมกัน ฝึกความเป็นผู้นำ และสร้างประสบการณ์ใหม่
+</p>
+</div>
+
+</div>
+
+<div class="card">
+<img src="images/activity4.jpg" alt="Activity 4">
+
+<div class="content">
+<div class="date">2024</div>
+<h2>อบรมและสัมมนา</h2>
+<p>
+เข้าร่วมการอบรมเพื่อเพิ่มพูนความรู้และทักษะที่สามารถนำไปใช้ในอนาคต
+</p>
+</div>
+
+</div>
+
+<div class="card">
+<img src="images/activity5.jpg" alt="Activity 5">
+
+<div class="content">
+<div class="date">2024</div>
+<h2>กิจกรรมโรงเรียน</h2>
+<p>
+มีส่วนร่วมในกิจกรรมต่าง ๆ ของโรงเรียน และช่วยสร้างความสามัคคีในหมู่เพื่อน
+</p>
+</div>
+
+</div>
+
+<div class="card">
+<img src="images/activity6.jpg" alt="Activity 6">
+
+<div class="content">
+<div class="date">2023</div>
+<h2>ผลงานที่ภาคภูมิใจ</h2>
+<p>
+รวบรวมผลงานและประสบการณ์ที่ช่วยพัฒนาทักษะทั้งด้านการเรียนและการใช้ชีวิต
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 My Portfolio
+</div>
+
+</body>
+</html>
